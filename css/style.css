@@ -236,6 +236,10 @@ p {
     width: auto;
 }
 
+.logo-text {
+    margin-left: var(--spacing-sm);
+}
+
 .logo-main {
     font-family: var(--font-heading);
     font-size: 1.5rem;
