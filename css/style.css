@@ -244,7 +244,7 @@ p {
     font-family: var(--font-heading);
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--color-text);
+    color: var(--color-tagline);
 }
 
 .logo-accent {
