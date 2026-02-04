@@ -56,7 +56,8 @@
     margin-bottom: var(--spacing-lg);
 }
 
-.hero-subpage-image img {
+.hero-subpage-image img,
+.hero-subpage-image video {
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-lg);
     width: 100%;
