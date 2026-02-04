@@ -259,6 +259,35 @@ p {
     font-size: var(--font-size-small);
 }
 
+/* Header Navigation */
+.header-nav {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .header-nav {
+        display: flex;
+        gap: var(--spacing-lg);
+        align-items: center;
+    }
+}
+
+.header-nav a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: var(--font-size-small);
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.header-nav a:hover {
+    color: var(--color-primary);
+}
+
+.header-nav a.active {
+    color: var(--color-primary);
+}
+
 /* ============================================ */
 /* HERO                                        */
 /* ============================================ */
