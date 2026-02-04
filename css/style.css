@@ -858,6 +858,7 @@ p {
     font-size: var(--font-size-small);
 }
 
+.footer h3,
 .footer h4 {
     font-family: var(--font-heading);
     font-style: italic;
