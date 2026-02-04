@@ -63,6 +63,80 @@
     height: auto;
 }
 
+/* Hero Benefits List */
+.hero-benefits {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 var(--spacing-lg) 0;
+}
+
+.hero-benefits li {
+    position: relative;
+    padding-left: var(--spacing-lg);
+    margin-bottom: var(--spacing-xs);
+    font-size: 1rem;
+}
+
+.hero-benefits li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+/* ============================================ */
+/* KIEZEN SECTION                               */
+/* ============================================ */
+.section-kiezen {
+    background-color: var(--color-white);
+}
+
+/* Content CTA */
+.content-cta {
+    margin-top: var(--spacing-lg);
+    text-align: center;
+}
+
+/* ============================================ */
+/* SERVICE SECTION                              */
+/* ============================================ */
+.section-service {
+    background-color: var(--color-background-soft);
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+}
+
+@media (min-width: 768px) {
+    .service-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.service-item {
+    background-color: var(--color-white);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-md);
+    text-align: center;
+}
+
+.service-item h3 {
+    font-size: 1.125rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-primary);
+}
+
+.service-item p {
+    font-size: var(--font-size-small);
+    color: var(--color-text-light);
+    margin-bottom: 0;
+}
+
 /* ============================================ */
 /* INTRO CONTENT SECTION                        */
 /* ============================================ */
