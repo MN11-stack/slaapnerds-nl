@@ -414,6 +414,12 @@ p {
     margin-bottom: 0;
 }
 
+a.ontdekken-link {
+    text-decoration: none;
+    display: block;
+    color: inherit;
+}
+
 .ontdekken-conclusion {
     font-family: var(--font-heading);
     font-style: italic;
