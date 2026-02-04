@@ -238,6 +238,7 @@ p {
 
 .logo-text {
     margin-left: var(--spacing-sm);
+    text-decoration: none;
 }
 
 .logo-main {
