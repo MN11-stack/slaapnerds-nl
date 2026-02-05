@@ -362,6 +362,10 @@ p {
         gap: var(--spacing-lg);
         align-items: center;
     }
+
+    .header-nav .mobile-cta {
+        display: none;
+    }
 }
 
 /* Hide CTA button on mobile (it's in the mobile menu) */
