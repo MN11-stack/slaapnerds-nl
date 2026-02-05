@@ -255,9 +255,67 @@ p {
     color: var(--color-primary);
 }
 
+/* Logo responsive sizing */
+@media (max-width: 374px) {
+    .logo-image {
+        height: 30px;
+    }
+
+    .logo-main,
+    .logo-accent {
+        font-size: 1.15rem;
+    }
+
+    .logo-text {
+        margin-left: var(--spacing-xs);
+    }
+}
+
 .btn-header {
     padding: var(--spacing-xs) var(--spacing-md);
     font-size: var(--font-size-small);
+}
+
+/* Hamburger Menu Button */
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 44px;
+    height: 44px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1001;
+}
+
+.hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: var(--color-text);
+    transition: var(--transition);
+    border-radius: 2px;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+@media (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
 }
 
 /* Header Navigation */
@@ -265,11 +323,55 @@ p {
     display: none;
 }
 
+/* Mobile Navigation Overlay */
+@media (max-width: 767px) {
+    .header-nav.open {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--color-white);
+        z-index: 1000;
+        padding: 80px var(--container-padding) var(--spacing-xl);
+        gap: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-nav.open a {
+        font-size: 1.25rem;
+        padding: var(--spacing-md) 0;
+        border-bottom: 1px solid var(--color-background-soft);
+        width: 100%;
+        max-width: 80vw;
+        text-align: center;
+    }
+
+    .header-nav.open .mobile-cta {
+        margin-top: var(--spacing-lg);
+        border-bottom: none;
+    }
+}
+
 @media (min-width: 768px) {
     .header-nav {
         display: flex;
         gap: var(--spacing-lg);
         align-items: center;
+    }
+}
+
+/* Hide CTA button on mobile (it's in the mobile menu) */
+.btn-header {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .btn-header {
+        display: inline-block;
     }
 }
 

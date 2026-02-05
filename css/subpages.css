@@ -530,4 +530,16 @@
     .grens-image {
         order: -1;
     }
+
+    /* Tighter gaps on mobile */
+    .service-grid,
+    .features-grid,
+    .proefliggen-grid {
+        gap: var(--spacing-sm);
+    }
+
+    /* Location tags smaller gap */
+    .grens-locations {
+        gap: var(--spacing-xs);
+    }
 }
