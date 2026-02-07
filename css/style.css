@@ -353,6 +353,7 @@ p {
     .header-nav.open .mobile-cta {
         margin-top: var(--spacing-lg);
         border-bottom: none;
+        color: var(--color-white);
     }
 }
 
