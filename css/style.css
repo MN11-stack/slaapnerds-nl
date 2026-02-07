@@ -232,8 +232,8 @@ p {
 }
 
 .logo-image {
-    height: 40px;
-    width: auto;
+    width: 120px;
+    height: auto;
 }
 
 .logo-text {
@@ -243,31 +243,33 @@ p {
 
 .logo-main {
     font-family: var(--font-heading);
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-weight: 700;
     color: var(--color-tagline);
 }
 
 .logo-accent {
     font-family: var(--font-heading);
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-weight: 700;
     color: var(--color-primary);
 }
 
 /* Logo responsive sizing */
-@media (max-width: 374px) {
+@media (min-width: 640px) {
     .logo-image {
-        height: 30px;
+        width: 140px;
     }
 
     .logo-main,
     .logo-accent {
-        font-size: 1.15rem;
+        font-size: 1.25rem;
     }
+}
 
-    .logo-text {
-        margin-left: var(--spacing-xs);
+@media (min-width: 768px) {
+    .logo-image {
+        width: 180px;
     }
 }
 
