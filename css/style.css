@@ -395,6 +395,68 @@ p {
     color: var(--color-primary);
 }
 
+/* Language Switcher */
+.lang-switch {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: var(--font-size-small);
+    font-weight: 500;
+    transition: var(--transition);
+    white-space: nowrap;
+}
+
+.lang-switch:hover {
+    color: var(--color-primary);
+}
+
+.lang-switch-flag {
+    width: 18px;
+    height: 13px;
+    border-radius: 2px;
+    flex-shrink: 0;
+}
+
+/* Desktop: Language switcher between nav and CTA */
+.lang-switch-desktop {
+    display: none;
+    margin-left: var(--spacing-sm);
+    padding-left: var(--spacing-md);
+    border-left: 1px solid #ddd;
+}
+
+@media (min-width: 768px) {
+    .lang-switch-desktop {
+        display: inline-flex;
+    }
+}
+
+/* Mobile: Language switcher inside burger menu */
+.lang-switch-mobile {
+    margin-top: var(--spacing-md);
+    padding-top: var(--spacing-md);
+    border-top: 1px solid #ddd;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .lang-switch-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .header-nav.open .lang-switch-mobile {
+        font-size: 1.1rem;
+        padding: var(--spacing-md) 0;
+        border-bottom: none;
+        width: 100%;
+        max-width: 80vw;
+    }
+}
+
 /* ============================================ */
 /* HERO                                        */
 /* ============================================ */
