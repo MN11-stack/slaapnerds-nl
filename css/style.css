@@ -314,7 +314,7 @@ p {
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .hamburger {
         display: none;
     }
@@ -326,7 +326,7 @@ p {
 }
 
 /* Mobile Navigation Dropdown */
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
     .header-nav.open {
         display: flex;
         flex-direction: column;
@@ -352,7 +352,7 @@ p {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .header-nav {
         display: flex;
         gap: var(--spacing-lg);
@@ -369,7 +369,7 @@ p {
     display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .btn-header {
         display: inline-block;
     }
@@ -423,7 +423,7 @@ p {
     border-left: 1px solid #ddd;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .lang-switch-desktop {
         display: inline-flex;
     }
@@ -437,13 +437,13 @@ p {
     justify-content: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .lang-switch-mobile {
         display: none;
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
     .header-nav.open .lang-switch-mobile {
         display: flex;
         align-items: center;
@@ -703,9 +703,30 @@ a.ontdekken-link {
     margin-bottom: 0;
 }
 
+.advies-image {
+    position: relative;
+}
+
 .advies-image img {
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-lg);
+}
+
+.team-names {
+    display: flex;
+    justify-content: space-around;
+    padding: var(--spacing-sm) var(--spacing-md) 0;
+}
+
+.team-name {
+    text-align: center;
+    font-size: var(--font-size-small);
+    color: var(--color-tagline);
+}
+
+.team-name small {
+    font-size: 0.75rem;
+    color: var(--color-text-light);
 }
 
 /* ============================================ */
