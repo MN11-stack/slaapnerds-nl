@@ -351,35 +351,30 @@
     <!-- ============================================ -->
     <!-- FAQ                                          -->
     <!-- ============================================ -->
-    <section class="section section-intro-content">
+    <section id="faq" class="section section-faq">
         <div class="container">
-            <div class="content-narrow">
-                <h2>Veelgestelde vragen</h2>
-
-                <div class="advies-highlight" style="margin-bottom: var(--spacing-lg);">
-                    <h3>Is het advies vrijblijvend?</h3>
-                    <p style="margin-bottom: 0;">Ja, volledig. Je kunt rustig proefliggen, vragen stellen en informatie meenemen naar huis. Er is geen verplichting om iets te kopen. Neem de tijd die je nodig hebt.</p>
-                </div>
-
-                <div class="advies-highlight" style="margin-bottom: var(--spacing-lg);">
-                    <h3>Spreken jullie Nederlands?</h3>
-                    <p style="margin-bottom: 0;">We spreken weliswaar geen vloeiend Nederlands, maar we begrijpen het Nederlands goed en doen ons uiterste best. Daarnaast spreken we Engels.</p>
-                </div>
-
-                <div class="advies-highlight" style="margin-bottom: var(--spacing-lg);">
-                    <h3>Hoe werkt levering en montage in Nederland?</h3>
-                    <p style="margin-bottom: 0;">We leveren gratis in heel Nederland. Onze monteurs plaatsen je bed tot in de slaapkamer en zorgen dat alles perfect staat. Desgewenst nemen we je oude bed mee.</p>
-                </div>
-
-                <div class="advies-highlight" style="margin-bottom: var(--spacing-lg);">
-                    <h3>Hoe verloopt een afspraak?</h3>
-                    <p style="margin-bottom: 0;">Je boekt online een tijdslot dat je uitkomt. Bij aankomst bespreken we je wensen, waarna je uitgebreid kunt proefliggen met professionele begeleiding. Reken op ongeveer 45-60 minuten.</p>
-                </div>
-
-                <div class="advies-highlight">
-                    <h3>Moet ik een afspraak maken?</h3>
-                    <p style="margin-bottom: 0;">Een afspraak is niet verplicht, maar wel aan te raden. Zo weet je zeker dat er een adviseur voor je klaar staat en krijg je alle aandacht die je verdient.</p>
-                </div>
+            <h2>Veelgestelde vragen</h2>
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary>Is het advies vrijblijvend?</summary>
+                    <p>Ja, volledig. Je kunt rustig proefliggen, vragen stellen en informatie meenemen naar huis. Er is geen verplichting om iets te kopen. Neem de tijd die je nodig hebt.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Spreken jullie Nederlands?</summary>
+                    <p>We spreken weliswaar geen vloeiend Nederlands, maar we begrijpen het Nederlands goed en doen ons uiterste best. Daarnaast spreken we Engels.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Hoe werkt levering en montage in Nederland?</summary>
+                    <p>We leveren gratis in heel Nederland. Onze monteurs plaatsen je bed tot in de slaapkamer en zorgen dat alles perfect staat. Desgewenst nemen we je oude bed mee.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Hoe verloopt een afspraak?</summary>
+                    <p>Je boekt online een tijdslot dat je uitkomt. Bij aankomst bespreken we je wensen, waarna je uitgebreid kunt proefliggen met professionele begeleiding. Reken op ongeveer 45-60 minuten.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Moet ik een afspraak maken?</summary>
+                    <p>Een afspraak is niet verplicht, maar wel aan te raden. Zo weet je zeker dat er een adviseur voor je klaar staat en krijg je alle aandacht die je verdient.</p>
+                </details>
             </div>
         </div>
     </section>
@@ -513,6 +508,21 @@
             </div>
         </div>
     </footer>
+
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {"@type": "Question", "name": "Is het advies vrijblijvend?", "acceptedAnswer": {"@type": "Answer", "text": "Ja, volledig. Je kunt rustig proefliggen, vragen stellen en informatie meenemen naar huis. Er is geen verplichting om iets te kopen. Neem de tijd die je nodig hebt."}},
+            {"@type": "Question", "name": "Spreken jullie Nederlands?", "acceptedAnswer": {"@type": "Answer", "text": "We spreken weliswaar geen vloeiend Nederlands, maar we begrijpen het Nederlands goed en doen ons uiterste best. Daarnaast spreken we Engels."}},
+            {"@type": "Question", "name": "Hoe werkt levering en montage in Nederland?", "acceptedAnswer": {"@type": "Answer", "text": "We leveren gratis in heel Nederland. Onze monteurs plaatsen je bed tot in de slaapkamer en zorgen dat alles perfect staat. Desgewenst nemen we je oude bed mee."}},
+            {"@type": "Question", "name": "Hoe verloopt een afspraak?", "acceptedAnswer": {"@type": "Answer", "text": "Je boekt online een tijdslot dat je uitkomt. Bij aankomst bespreken we je wensen, waarna je uitgebreid kunt proefliggen met professionele begeleiding. Reken op ongeveer 45-60 minuten."}},
+            {"@type": "Question", "name": "Moet ik een afspraak maken?", "acceptedAnswer": {"@type": "Answer", "text": "Een afspraak is niet verplicht, maar wel aan te raden. Zo weet je zeker dat er een adviseur voor je klaar staat en krijg je alle aandacht die je verdient."}}
+        ]
+    }
+    </script>
 
     <!-- Mobile Menu -->
     <script>
