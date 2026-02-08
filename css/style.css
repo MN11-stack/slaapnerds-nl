@@ -1012,36 +1012,229 @@ a.ontdekken-link {
     text-align: center;
 }
 
-.cta-content {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.cta-content h2 {
+.section-cta > .container > h2 {
     color: var(--color-white);
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 400;
 }
 
-.cta-content p {
+.section-cta > .container > p {
     color: var(--color-white);
     opacity: 0.9;
+    font-size: 1.125rem;
+    margin-top: var(--spacing-md);
 }
 
-.section-cta .btn-secondary {
+/* Two-card grid */
+.cta-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+    text-align: left;
+}
+
+@media (min-width: 768px) {
+    .cta-cards {
+        grid-template-columns: 1fr 1fr;
+        align-items: stretch;
+    }
+}
+
+.cta-card {
+    display: flex;
+    flex-direction: column;
     background-color: var(--color-white);
-    border-color: var(--color-white);
-    color: var(--color-secondary);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-lg);
 }
 
-.section-cta .btn-secondary:hover {
-    background-color: transparent;
-    border-color: var(--color-white);
+.cta-card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.cta-card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: rgba(49, 175, 180, 0.1);
+    flex-shrink: 0;
+}
+
+.cta-card-icon svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: var(--color-primary);
+    fill: none;
+    stroke: currentColor;
+}
+
+.cta-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--color-tagline);
+    margin-bottom: 0;
+}
+
+.cta-card p {
+    color: var(--color-tagline);
+    line-height: 1.6;
+    margin-top: var(--spacing-sm);
+}
+
+/* Checklist */
+.cta-checklist {
+    list-style: none;
+    padding: 0;
+    margin: var(--spacing-md) 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.cta-checklist li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    color: var(--color-tagline);
+}
+
+.cta-checklist svg {
+    width: 1rem;
+    height: 1rem;
+    flex-shrink: 0;
+    margin-top: 0.25rem;
+    color: var(--color-primary);
+    fill: none;
+    stroke: currentColor;
+}
+
+/* Opening hours */
+.cta-hours {
+    margin-top: var(--spacing-sm);
+    font-size: var(--font-size-small);
+    color: var(--color-tagline);
+}
+
+.cta-hours p {
+    font-weight: 600;
+    font-size: var(--font-size-small);
+    margin-top: 0;
+}
+
+.cta-hours-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.125rem 1rem;
+}
+
+.cta-address {
+    margin-top: var(--spacing-sm);
+    font-size: var(--font-size-small);
+    font-style: normal;
+    color: var(--color-tagline);
+    line-height: 1.6;
+}
+
+/* Card actions (pushed to bottom) */
+.cta-card-actions {
+    margin-top: auto;
+    padding-top: var(--spacing-lg);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+@media (min-width: 480px) {
+    .cta-card-actions {
+        flex-direction: row;
+    }
+}
+
+.cta-card-actions .btn {
+    flex: 1;
+    text-align: center;
+    font-size: var(--font-size-small);
+}
+
+.btn-outline {
+    display: inline-block;
+    padding: var(--spacing-xs) var(--spacing-md);
+    border: 2px solid var(--color-primary);
+    border-radius: var(--radius-sm);
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-outline:hover {
+    background-color: var(--color-primary);
     color: var(--color-white);
 }
 
-.cta-note {
+/* Contact bar */
+.cta-contact-bar {
+    margin-top: var(--spacing-xl);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-md);
+    padding: 1.25rem 2rem;
+    color: rgba(255, 255, 255, 0.8);
     font-size: var(--font-size-small);
-    margin-top: var(--spacing-md);
-    margin-bottom: 0;
+}
+
+@media (min-width: 640px) {
+    .cta-contact-bar {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+}
+
+.cta-contact-bar span,
+.cta-contact-bar a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cta-contact-bar a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.cta-contact-bar a:hover {
+    color: var(--color-white);
+}
+
+.cta-contact-bar svg {
+    width: 1rem;
+    height: 1rem;
+    fill: none;
+    stroke: currentColor;
+}
+
+.cta-contact-bar .dot {
+    display: none;
+}
+
+@media (min-width: 640px) {
+    .cta-contact-bar .dot {
+        display: inline;
+    }
 }
 
 /* ============================================ */
