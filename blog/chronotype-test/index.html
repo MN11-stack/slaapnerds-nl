@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronotype-test: ben jij een leeuwerik of uil? | Slaapnerds</title>
+    <meta name="description" content="Ontdek je chronotype met onze korte test – gebaseerd op de MEQ-vragenlijst. Ben jij een ochtendtype, avondtype of neutraal? Met persoonlijke tips voor jouw slaapritme.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Chronotype-test: ben jij een leeuwerik of uil? | Slaapnerds">
+    <meta property="og:description" content="Ontdek je chronotype met onze korte test. Gebaseerd op wetenschappelijk onderzoek, met persoonlijke tips.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://slaapnerds.nl/blog/chronotype-test">
+    <meta property="og:locale" content="nl_NL">
+
+    <!-- Canonical & Hreflang -->
+    <link rel="canonical" href="https://slaapnerds.nl/blog/chronotype-test">
+    <link rel="alternate" hreflang="nl-NL" href="https://slaapnerds.nl/blog/chronotype-test">
+    <link rel="alternate" hreflang="de-DE" href="https://www.schlafnerds.de/chronotypen-test">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/subpages.css">
+    <link rel="stylesheet" href="../../css/blog.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="https://www.schlafnerds.de" target="_blank" rel="noopener">
+                        <img src="../../images/logo.svg" alt="Schlafnerds Logo" class="logo-image">
+                    </a>
+                    <a href="/" class="logo-text">
+                        <span class="logo-main">Slaap</span><span class="logo-accent">nerds</span>
+                    </a>
+                </div>
+                <nav class="header-nav" id="mobile-nav">
+                    <a href="/boxspringbedden">Boxspringbedden</a>
+                    <a href="/matrassen">Matrassen</a>
+                    <a href="/houten-bedden">Houten bedden</a>
+                    <a href="/service-en-advies">Service & advies</a>
+                    <a href="/net-over-de-grens">Net over de grens</a>
+                    <a href="https://calendly.com/schlafnerds/45min" target="_blank" rel="noopener" class="btn btn-secondary mobile-cta">Afspraak boeken</a>
+                    <a href="https://www.schlafnerds.de/chronotypen-test" class="lang-switch lang-switch-mobile" aria-label="Zur deutschen Version wechseln">
+                        <svg class="lang-switch-flag" viewBox="0 0 640 480"><rect width="640" height="160" fill="#000"/><rect y="160" width="640" height="160" fill="#D00"/><rect y="320" width="640" height="160" fill="#FFCE00"/></svg>
+                        Deutsch
+                    </a>
+                </nav>
+                <a href="https://calendly.com/schlafnerds/45min" target="_blank" rel="noopener" class="btn btn-secondary btn-header">Afspraak boeken</a>
+                <a href="https://www.schlafnerds.de/chronotypen-test" class="lang-switch lang-switch-desktop" aria-label="Zur deutschen Version wechseln">
+                    <svg class="lang-switch-flag" viewBox="0 0 640 480"><rect width="640" height="160" fill="#000"/><rect y="160" width="640" height="160" fill="#D00"/><rect y="320" width="640" height="160" fill="#FFCE00"/></svg>
+                    Deutsch
+                </a>
+                <button class="hamburger" id="hamburger" aria-label="Menu openen">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="section section-hero-subpage">
+        <div class="container">
+            <div class="hero-subpage-grid">
+                <div class="hero-subpage-content">
+                    <nav class="breadcrumb">
+                        <a href="/">Home</a> / <a href="/blog">Slaapkennis</a> / <span>Chronotype-test</span>
+                    </nav>
+                    <p class="accent-text">Interactieve test</p>
+                    <h1>Chronotype-test:<br>ben jij een leeuwerik of uil?</h1>
+                    <p>Ieder mens heeft een eigen biologische klok. Die bepaalt wanneer je het beste kunt inslapen, wanneer je wakker wordt en op welk moment van de dag je het meest presteert. Met deze korte test ontdek je je chronotype – gebaseerd op de wetenschappelijke MEQ-vragenlijst.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEST -->
+    <section class="section">
+        <div class="container">
+            <div class="content-narrow">
+
+                <!-- Progress -->
+                <div class="test-progress">
+                    <div class="test-progress-info">
+                        <span id="progress-text">Vraag 0 van 5</span>
+                        <span id="progress-percent">0%</span>
+                    </div>
+                    <div class="test-progress-bar">
+                        <div class="test-progress-fill" id="progress-fill" style="width: 0%"></div>
+                    </div>
+                </div>
+
+                <!-- Question 1 -->
+                <div class="test-question active" id="q1" data-question="1">
+                    <p class="article-card-label">Vraag 1 van 5</p>
+                    <h3>Hoe laat zou je opstaan als je je dag helemaal vrij kon indelen?</h3>
+                    <div class="test-options">
+                        <button class="test-option" data-points="5">5:00 – 6:30 uur</button>
+                        <button class="test-option" data-points="4">6:30 – 7:45 uur</button>
+                        <button class="test-option" data-points="3">7:45 – 9:45 uur</button>
+                        <button class="test-option" data-points="2">9:45 – 11:00 uur</button>
+                        <button class="test-option" data-points="1">11:00 – 12:00 uur</button>
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="test-question locked" id="q2" data-question="2">
+                    <p class="article-card-label">Vraag 2 van 5</p>
+                    <h3>Hoe voel je je in het eerste halfuur na het wakker worden?</h3>
+                    <div class="test-options">
+                        <button class="test-option" data-points="1">Erg moe</button>
+                        <button class="test-option" data-points="2">Tamelijk moe</button>
+                        <button class="test-option" data-points="3">Tamelijk uitgerust</button>
+                        <button class="test-option" data-points="4">Heel uitgerust</button>
+                    </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="test-question locked" id="q3" data-question="3">
+                    <p class="article-card-label">Vraag 3 van 5</p>
+                    <h3>Rond welk tijdstip 's avonds voel je je moe en heb je behoefte aan slaap?</h3>
+                    <div class="test-options">
+                        <button class="test-option" data-points="5">20:00 – 21:00 uur</button>
+                        <button class="test-option" data-points="4">21:00 – 22:15 uur</button>
+                        <button class="test-option" data-points="3">22:15 – 0:45 uur</button>
+                        <button class="test-option" data-points="2">0:45 – 2:00 uur</button>
+                        <button class="test-option" data-points="1">2:00 – 3:00 uur</button>
+                    </div>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="test-question locked" id="q4" data-question="4">
+                    <p class="article-card-label">Vraag 4 van 5</p>
+                    <h3>Op welk moment van de dag voel je je het beste?</h3>
+                    <div class="test-options">
+                        <button class="test-option" data-points="5">5 – 8 uur</button>
+                        <button class="test-option" data-points="4">8 – 10 uur</button>
+                        <button class="test-option" data-points="3">10 – 17 uur</button>
+                        <button class="test-option" data-points="2">17 – 22 uur</button>
+                        <button class="test-option" data-points="1">22 – 5 uur</button>
+                    </div>
+                </div>
+
+                <!-- Question 5 -->
+                <div class="test-question locked" id="q5" data-question="5">
+                    <p class="article-card-label">Vraag 5 van 5</p>
+                    <h3>Men kent ochtendtypen (leeuweriken) en avondtypen (uilen). Welk type ben jij?</h3>
+                    <div class="test-options">
+                        <button class="test-option" data-points="6">Duidelijk een ochtendtype</button>
+                        <button class="test-option" data-points="4">Meer een ochtend- dan avondtype</button>
+                        <button class="test-option" data-points="2">Meer een avond- dan ochtendtype</button>
+                        <button class="test-option" data-points="0">Duidelijk een avondtype</button>
+                    </div>
+                </div>
+
+                <!-- Result -->
+                <div class="test-result" id="test-result" style="display: none;">
+                    <div class="test-result-header">
+                        <div class="test-result-emoji" id="result-emoji"></div>
+                        <h2 id="result-title"></h2>
+                        <p id="result-description"></p>
+                    </div>
+
+                    <div class="test-result-grid">
+                        <div>
+                            <h3>Kenmerken</h3>
+                            <ul class="trait-list" id="result-traits"></ul>
+                        </div>
+                        <div>
+                            <h3>Tips</h3>
+                            <ul class="tip-list" id="result-tips"></ul>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: var(--spacing-xl); text-align: center;">
+                        <p style="margin-bottom: var(--spacing-md); color: var(--color-text-light);">Wil je je slaap verder verbeteren?</p>
+                        <div style="display: flex; flex-wrap: wrap; gap: var(--spacing-sm); justify-content: center;">
+                            <a href="https://calendly.com/schlafnerds/45min" target="_blank" rel="noopener" class="btn btn-primary">Persoonlijk slaapadvies boeken</a>
+                            <button class="btn btn-outline" onclick="resetTest()">Test opnieuw doen</button>
+                        </div>
+                    </div>
+                </div>
+
+                <p style="margin-top: var(--spacing-xl); font-size: var(--font-size-small); color: var(--color-text-light);">
+                    Deze test is gebaseerd op de Morningness-Eveningness Questionnaire (MEQ) van Horne & Östberg (1976) en geeft een indicatie van je chronotype. Voor een uitgebreide analyse adviseren wij professioneel slaaponderzoek.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="https://www.schlafnerds.de" target="_blank" rel="noopener">
+                        <img src="../../images/logo.svg" alt="Slaapnerds Logo" class="footer-logo">
+                    </a>
+                    <p>Goed slapen koop je niet online.<br>Dat ontdek je – met persoonlijk advies.</p>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p>Nordstraße 39<br>46395 Bocholt, Duitsland</p>
+                    <p>Tel: <a href="tel:+4928713492862">+49 2871 349 28 62</a></p>
+                    <p>E-mail: <a href="mailto:info@schlafnerds.de">info@schlafnerds.de</a></p>
+                </div>
+                <div class="footer-links">
+                    <h3>Slaapkennis</h3>
+                    <ul>
+                        <li><a href="/blog">Alle artikelen</a></li>
+                        <li><a href="/blog/slaaphygiene">Slaaphygiëne-regels</a></li>
+                        <li><a href="/blog/slaapmythes">7 Slaapmythes</a></li>
+                        <li><a href="/blog/chronotype-test">Chronotype-test</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Pagina's</h3>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/boxspringbedden">Boxspringbedden</a></li>
+                        <li><a href="/matrassen">Matrassen</a></li>
+                        <li><a href="/houten-bedden">Houten bedden</a></li>
+                        <li><a href="/service-en-advies">Service & advies</a></li>
+                        <li><a href="/net-over-de-grens">Net over de grens</a></li>
+                        <li><a href="https://www.schlafnerds.de" target="_blank" rel="noopener">Schlafnerds.de</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Slaapnerds – onderdeel van <a href="https://www.schlafnerds.de" target="_blank" rel="noopener">Schlafnerds</a> (Duitsland)</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const mobileNav = document.getElementById('mobile-nav');
+        hamburger.addEventListener('click', function () {
+            hamburger.classList.toggle('active');
+            mobileNav.classList.toggle('open');
+            document.body.style.overflow = mobileNav.classList.contains('open') ? 'hidden' : '';
+        });
+        mobileNav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function () {
+                hamburger.classList.remove('active');
+                mobileNav.classList.remove('open');
+                document.body.style.overflow = '';
+            });
+        });
+    </script>
+
+    <!-- Chronotype Test Logic -->
+    <script>
+        var answers = {};
+        var totalQuestions = 5;
+
+        var results = {
+            morning: {
+                emoji: '\uD83D\uDC26',
+                title: 'Ochtendtype (Leeuwerik)',
+                description: 'Je bent een leeuwerik! Je komt goed vroeg uit bed en hebt \u2019s ochtends je prestatiepiek. Dit voordeel in onze ochtendgerichte maatschappij wordt \u2019s avonds een nadeel \u2013 de vroege slaapbehoefte maakt late activiteiten vermoeiend.',
+                traits: [
+                    'Je staat graag vroeg op',
+                    'Je start de dag vol energie en met goede eetlust',
+                    'Slapen in de ochtend (bv. na een nachtdienst) valt je moeilijk'
+                ],
+                tips: [
+                    'Doe je belangrijkste taken in de eerste helft van de dag',
+                    'Gun jezelf rust bij een dip in de vroege middag',
+                    'Probeer niet lang op te blijven \u2019s avonds'
+                ]
+            },
+            neutral: {
+                emoji: '\u2696\uFE0F',
+                title: 'Neutraal type',
+                description: 'Je bent een neutraal type \u2013 geen uitgesproken leeuwerik en geen uil. Je bent flexibel en kunt je goed aanpassen aan verschillende dagritmes. De meeste mensen behoren tot dit type.',
+                traits: [
+                    'Je kunt zowel \u2019s ochtends als \u2019s avonds goed functioneren',
+                    'Je past je relatief gemakkelijk aan',
+                    'Je prestatiepiek ligt vaak midden op de dag'
+                ],
+                tips: [
+                    'Benut je flexibiliteit maar let op een regelmatig slaapritme',
+                    'Vermijd grote wisselingen tussen week en weekend',
+                    'Luister naar je biologische klok'
+                ]
+            },
+            evening: {
+                emoji: '\uD83E\uDD89',
+                title: 'Avondtype (Uil)',
+                description: 'Je bent een uil! Je bent avond- en nachtactief en hebt \u2019s ochtends moeite met opstaan. Uilen worden vaak langslaper genoemd \u2013 maar ze slapen niet per se langer, alleen op verschoven tijden.',
+                traits: [
+                    'Vroeg opstaan kost je veel moeite',
+                    '\u2019s Ochtends voel je je moe en heb je geen eetlust',
+                    'Vroeg inslapen \u2019s avonds lukt je moeilijk'
+                ],
+                tips: [
+                    'Laat het \u2019s ochtends rustig aangaan',
+                    'Neem genoeg tijd om in de dag te komen',
+                    'Doe moeilijke taken pas in de tweede helft van de dag'
+                ]
+            }
+        };
+
+        function selectOption(button, questionNum) {
+            var question = document.getElementById('q' + questionNum);
+            var allOptions = question.querySelectorAll('.test-option');
+
+            allOptions.forEach(function(opt) {
+                opt.classList.remove('selected');
+            });
+            button.classList.add('selected');
+
+            answers[questionNum] = parseInt(button.getAttribute('data-points'));
+
+            question.classList.remove('active');
+            question.classList.add('answered');
+
+            var answeredCount = Object.keys(answers).length;
+            updateProgress(answeredCount);
+
+            if (answeredCount < totalQuestions) {
+                var nextQ = document.getElementById('q' + (questionNum + 1));
+                if (nextQ) {
+                    nextQ.classList.remove('locked');
+                    nextQ.classList.add('active');
+                    setTimeout(function() {
+                        nextQ.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }, 300);
+                }
+            } else {
+                showResult();
+            }
+        }
+
+        function updateProgress(count) {
+            var percent = Math.round((count / totalQuestions) * 100);
+            document.getElementById('progress-text').textContent = 'Vraag ' + count + ' van ' + totalQuestions;
+            document.getElementById('progress-percent').textContent = percent + '%';
+            document.getElementById('progress-fill').style.width = percent + '%';
+        }
+
+        function showResult() {
+            var total = 0;
+            for (var key in answers) {
+                total += answers[key];
+            }
+
+            var type;
+            if (total >= 18) {
+                type = 'morning';
+            } else if (total >= 12) {
+                type = 'neutral';
+            } else {
+                type = 'evening';
+            }
+
+            var result = results[type];
+            document.getElementById('result-emoji').textContent = result.emoji;
+            document.getElementById('result-title').textContent = result.title;
+            document.getElementById('result-description').textContent = result.description;
+
+            var traitsHtml = '';
+            result.traits.forEach(function(trait) {
+                traitsHtml += '<li><span class="trait-dot"></span>' + trait + '</li>';
+            });
+            document.getElementById('result-traits').innerHTML = traitsHtml;
+
+            var tipsHtml = '';
+            result.tips.forEach(function(tip) {
+                tipsHtml += '<li><span class="tip-dot"></span>' + tip + '</li>';
+            });
+            document.getElementById('result-tips').innerHTML = tipsHtml;
+
+            var resultEl = document.getElementById('test-result');
+            resultEl.style.display = 'block';
+
+            setTimeout(function() {
+                resultEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 300);
+        }
+
+        function resetTest() {
+            answers = {};
+            updateProgress(0);
+
+            document.getElementById('test-result').style.display = 'none';
+
+            var questions = document.querySelectorAll('.test-question');
+            questions.forEach(function(q, i) {
+                q.classList.remove('answered', 'active');
+                if (i === 0) {
+                    q.classList.add('active');
+                } else {
+                    q.classList.add('locked');
+                }
+                q.querySelectorAll('.test-option').forEach(function(opt) {
+                    opt.classList.remove('selected');
+                });
+            });
+
+            document.getElementById('q1').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        // Attach click handlers
+        document.querySelectorAll('.test-question').forEach(function(question) {
+            var questionNum = parseInt(question.getAttribute('data-question'));
+            question.querySelectorAll('.test-option').forEach(function(option) {
+                option.addEventListener('click', function() {
+                    selectOption(this, questionNum);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

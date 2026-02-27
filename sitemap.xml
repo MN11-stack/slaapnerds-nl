@@ -24,4 +24,20 @@
     <loc>https://www.slaapnerds.nl/net-over-de-grens/</loc>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://www.slaapnerds.nl/blog/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slaapnerds.nl/blog/slaaphygiene/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slaapnerds.nl/blog/slaapmythes/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slaapnerds.nl/blog/chronotype-test/</loc>
+    <priority>0.7</priority>
+  </url>
 </urlset>
