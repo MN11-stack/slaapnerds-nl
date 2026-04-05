@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "slaapnerds.nl"
+        }
+      ],
+      "destination": "https://www.slaapnerds.nl/$1",
+      "permanent": true
+    }
+  ]
+}
