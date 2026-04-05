@@ -40,4 +40,8 @@
     <loc>https://www.slaapnerds.nl/blog/chronotype-test/</loc>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://www.slaapnerds.nl/slaapadvies-doetinchem/</loc>
+    <priority>0.8</priority>
+  </url>
 </urlset>
