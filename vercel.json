@@ -2,14 +2,25 @@
   "trailingSlash": true,
   "redirects": [
     {
-      "source": "/(.*)",
+      "source": "/",
       "has": [
         {
           "type": "host",
           "value": "slaapnerds.nl"
         }
       ],
-      "destination": "https://www.slaapnerds.nl/$1",
+      "destination": "https://www.slaapnerds.nl/",
+      "permanent": true
+    },
+    {
+      "source": "/:path+",
+      "has": [
+        {
+          "type": "host",
+          "value": "slaapnerds.nl"
+        }
+      ],
+      "destination": "https://www.slaapnerds.nl/:path+/",
       "permanent": true
     }
   ]
