@@ -1330,12 +1330,23 @@ a.ontdekken-link {
     background-color: var(--color-background-soft);
 }
 
-.section-belofte ul.cta-checklist {
-    margin-top: var(--spacing-lg);
+.belofte-card {
+    background-color: var(--color-white);
+    border: 1px solid #f0f0f0;
+    border-radius: 16px;
+    padding: var(--spacing-xl);
+    box-shadow: var(--shadow-sm);
     max-width: 720px;
+    margin: 0 auto;
 }
 
-.section-belofte .belofte-eyebrow {
+@media (min-width: 768px) {
+    .belofte-card {
+        padding: var(--spacing-2xl);
+    }
+}
+
+.belofte-card .belofte-eyebrow {
     font-size: var(--font-size-small);
     font-weight: 600;
     letter-spacing: 0.05em;
@@ -1344,8 +1355,12 @@ a.ontdekken-link {
     margin: 0 0 var(--spacing-sm);
 }
 
-.section-belofte .belofte-cta-intro {
+.belofte-card .belofte-cta-intro {
     margin-top: var(--spacing-xl);
     font-weight: 600;
     color: var(--color-tagline);
+}
+
+.belofte-card ul.cta-checklist {
+    margin-top: var(--spacing-md);
 }
