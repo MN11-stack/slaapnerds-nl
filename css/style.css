@@ -1346,6 +1346,10 @@ a.ontdekken-link {
     }
 }
 
+.belofte-card h2 {
+    text-wrap: balance;
+}
+
 .belofte-card .belofte-eyebrow {
     font-size: var(--font-size-small);
     font-weight: 600;
