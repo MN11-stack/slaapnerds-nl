@@ -1322,3 +1322,30 @@ a.ontdekken-link {
 .footer-bottom a {
     color: var(--color-white);
 }
+
+/* ============================================ */
+/* BELOFTE                                       */
+/* ============================================ */
+.section-belofte {
+    background-color: var(--color-background-soft);
+}
+
+.section-belofte ul.cta-checklist {
+    margin-top: var(--spacing-lg);
+    max-width: 720px;
+}
+
+.section-belofte .belofte-eyebrow {
+    font-size: var(--font-size-small);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    margin: 0 0 var(--spacing-sm);
+}
+
+.section-belofte .belofte-cta-intro {
+    margin-top: var(--spacing-xl);
+    font-weight: 600;
+    color: var(--color-tagline);
+}
