@@ -1515,3 +1515,165 @@ a.ontdekken-link {
 .btn {
     border-radius: var(--radius-md);
 }
+
+/* ============================================ */
+/* ROUND 2: Inline-Style-Cleanup Money-Pages     */
+/* Klassen für wiederkehrende Patterns           */
+/* ============================================ */
+
+/* Utility */
+.mt-xl {
+    margin-top: var(--spacing-xl);
+}
+
+.text-primary {
+    color: var(--color-primary);
+}
+
+/* Section-Subtitle (war nirgends als Klasse definiert) */
+.section-subtitle {
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-lg);
+}
+
+.section-subtitle.is-italic {
+    font-style: italic;
+}
+
+/* Testimonials (3× pro Money-Page) */
+.testimonials-list {
+    margin-top: var(--spacing-xl);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.testimonial-card {
+    background-color: var(--color-background-soft);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    text-align: center;
+}
+
+.testimonial-quote {
+    font-style: italic;
+    margin-bottom: var(--spacing-sm);
+}
+
+.testimonial-author {
+    font-size: var(--font-size-small);
+    color: var(--color-text-light);
+    margin-bottom: 0;
+}
+
+/* Adviesproces (service-en-advies — Stap-Cards) */
+.adviesproces-list {
+    max-width: 800px;
+    margin: var(--spacing-xl) auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.stap-card {
+    background: var(--color-white);
+    border: 1px solid #f0f0f0;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    padding: var(--spacing-lg);
+}
+
+.stap-card-inner {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+}
+
+.stap-number {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    background: rgba(49, 175, 180, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-heading);
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: var(--color-primary);
+}
+
+.stap-body {
+    flex: 1;
+}
+
+.stap-body h3 {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: var(--spacing-sm);
+}
+
+.stap-rows {
+    display: grid;
+    gap: var(--spacing-sm);
+}
+
+.stap-rows p {
+    margin: 0;
+}
+
+.stap-row-inline {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+}
+
+/* Stap header (h3 + tag badge) */
+.stap-header h3 {
+    margin: 0;
+}
+
+.stap-tag {
+    background: rgba(49, 175, 180, 0.1);
+    color: var(--color-primary);
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 12px;
+}
+
+/* Reset check-list margin within stap-cards */
+.stap-rows .check-list,
+.stap-card .check-list {
+    margin: 0;
+}
+
+/* Variant: content-cta left-aligned */
+.content-cta--left {
+    text-align: left;
+    margin-top: var(--spacing-lg);
+}
+
+/* advies-boxspring-grid hat top-margin */
+.advies-boxspring-grid {
+    margin-top: var(--spacing-xl);
+}
+
+/* Bottom-margin utility */
+.mb-xl {
+    margin-bottom: var(--spacing-xl);
+}
+
+/* Inline-Link Primary (für Text-Body-Links, die im Code primary brauchen) */
+.link-primary {
+    color: var(--color-primary);
+}
+
+/* Section background variants (statt inline) */
+.section-bg-soft {
+    background-color: var(--color-background-soft);
+}
