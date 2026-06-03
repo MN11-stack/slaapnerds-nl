@@ -30,6 +30,16 @@
     padding-bottom: var(--spacing-3xl);
 }
 
+/* Modifier: compact hero (only text, no image — e.g. blog index) */
+.section-blog-intro {
+    padding-bottom: var(--spacing-md);
+}
+
+/* Reduce padding-top on section directly following compact hero */
+.section-blog-intro + .section {
+    padding-top: var(--spacing-xl);
+}
+
 .hero-subpage-grid {
     display: grid;
     grid-template-columns: 1fr;
