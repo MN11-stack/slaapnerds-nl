@@ -27,7 +27,7 @@
 .section-hero-subpage {
     background-color: var(--color-white);
     padding-top: calc(80px + var(--spacing-lg));
-    padding-bottom: var(--spacing-section);
+    padding-bottom: var(--spacing-3xl);
 }
 
 .hero-subpage-grid {
@@ -399,6 +399,11 @@
     .grens-grid {
         grid-template-columns: 1fr 1fr;
     }
+}
+
+.grens-title {
+    margin-bottom: var(--spacing-lg);
+    text-wrap: pretty;
 }
 
 .grens-content h2 {
