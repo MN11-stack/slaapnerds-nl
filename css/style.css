@@ -1370,3 +1370,148 @@ a.ontdekken-link {
 .belofte-card ul.cta-checklist {
     margin-top: var(--spacing-md);
 }
+
+/* ============================================ */
+/* DESIGN LIFT — QW1–QW5                         */
+/* QW1 Card-Standard · QW2 Inline-Styles-Klassen */
+/* QW3 Text-max-width · QW4 BG-Rhythmik          */
+/* QW5 Button-Radius                             */
+/* ============================================ */
+
+/* QW3: Lesbare Text-Spalten */
+.content-narrow {
+    max-width: 65ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-narrow.text-center {
+    text-align: center;
+}
+
+/* QW1: Card-Standard — einheitliche Borders, Radius, Shadow */
+.ontdekken-item,
+.voordeel-item,
+.review-card,
+.vertrouwen-item {
+    background-color: var(--color-white);
+    border: 1px solid #f0f0f0;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.ontdekken-item {
+    overflow: hidden;
+}
+
+.ontdekken-item:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
+}
+
+.voordeel-item {
+    padding: var(--spacing-lg);
+}
+
+.vertrouwen-item {
+    padding: var(--spacing-lg);
+}
+
+/* QW2: Reviews-Section — Klassen statt inline-styles */
+.section-reviews {
+    background-color: var(--color-background-soft);
+}
+
+.aggregate-rating {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.aggregate-rating-stars {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    margin-bottom: var(--spacing-sm);
+    color: #FBBC04;
+    font-size: 1.75rem;
+}
+
+.aggregate-rating-value {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0 0 var(--spacing-sm);
+}
+
+.aggregate-rating-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.875rem;
+    color: var(--color-text-light);
+    text-decoration: none;
+}
+
+.review-card {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: var(--spacing-lg);
+}
+
+@media (min-width: 768px) {
+    .review-card {
+        padding: var(--spacing-xl);
+    }
+}
+
+.review-card-stars {
+    display: flex;
+    gap: 2px;
+    margin-bottom: var(--spacing-md);
+    color: #FBBC04;
+}
+
+.review-card-text {
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    color: var(--color-tagline);
+    margin: 0 0 var(--spacing-md);
+}
+
+.review-card-author {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-tagline);
+    margin: 0;
+}
+
+.review-card-author-note {
+    font-weight: 400;
+    color: var(--color-text-light);
+}
+
+.reviews-link-wrap {
+    text-align: center;
+    margin-top: var(--spacing-lg);
+}
+
+.reviews-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+/* QW4: BG-Rhythmik — section-regio wechselt auf weiß */
+/* (vorher 3× soft hintereinander: ontdekken / regio / voordelen) */
+.section-regio {
+    background-color: var(--color-white) !important;
+}
+
+/* QW5: Button-Radius einheitlich (vorher: var(--radius-sm) = 4px → zu kantig) */
+.btn {
+    border-radius: var(--radius-md);
+}
