@@ -111,6 +111,11 @@
     object-fit: cover;
 }
 
+/* Modifier — voor foto's waar het onderwerp onderaan zit */
+.blog-hero-image--bottom img {
+    object-position: center bottom;
+}
+
 /* Article cards (myth/rule) */
 .article-card {
     border: 2px solid var(--color-border, #e5e7eb);
